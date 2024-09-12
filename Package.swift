@@ -26,12 +26,12 @@ let package = Package(
         .package(url: "https://github.com/apple/swift-docc-plugin", from: "1.0.0"),
     ],
     targets: [
-        .target(name: "secp256k1"),
+        .target(name: "secp256k1_sol"),
         .target(
             name: "SolanaSwift",
             dependencies: [
                 // .product(name: "secp256k1", package: "secp256k1.swift"),
-                "secp256k1",
+                "secp256k1_sol",
                 .product(name: "TweetNacl", package: "tweetnacl-swiftwrap"),
                 .product(name: "Task_retrying", package: "task-retrying-swift"),
             ]
